@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ZeroDev Fullstack Starterkit 🚀
 
-## Getting Started
+Welcome to the ZeroDev Fullstack Starterkit! This starter kit is designed to help you quickly set up and start building a full-stack decentralized application (dApp) using ERC-4337 smart accounts. Below is an overview of the stack and instructions on how to get started.
 
-First, run the development server:
+## Tech Stack 🛠️
+
+- **NextJS**: A React framework for building server-side rendered (SSR) and static web applications.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Shadcn UI**: Pre-built UI components for faster development.
+- **Drizzle ORM**: TypeScript ORM for managing database operations.
+- **Vercel Postgres**: Vercel's managed PostgreSQL database service.
+- **Lucia**: Lightweight and flexible authentication library.
+- **Stripe**: Payment processing for handling transactions.
+- **Resend**: Email API for sending transactional emails.
+
+## Getting Started 🏁
+
+## Prerequisites 📋
+
+- Node.js (>= 14.x)
+- Yarn or npm
+- PostgreSQL
+
+## Next Steps ⚙️
+
+1.  Add Environment Variables to your .env
+2.  Run pnpm run db:generate
+3.  Run pnpm run db:migrate
+4.  Run pnpm run dev
+5.  Open http://localhost:3000 in your browser
+6.  Run pnpm run stripe:listen in a separate terminal
+
+## Building for Production 📦
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment 🚢
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The starter kit is optimized for deployment on Vercel. Follow the Vercel deployment guide to deploy your application.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Project Structure 🗂️
 
-## Learn More
+```bash
+/
+├── components/ # UI components
+├── pages/ # Next.js pages
+├── styles/ # Tailwind CSS styles
+├── utils/ # Utility functions
+├── drizzle/ # Database models and migrations
+├── public/ # Public assets
+├── .env.local # Environment variables
+├── package.json # Project dependencies and scripts
+└── README.md # Project documentation
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Available Scripts 📜
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+dev: Starts the development server.
+build: Builds the application for production.
+start: Starts the production server.
+drizzle:migrate: Runs database migrations.
+lint: Runs ESLint to check for code quality issues.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing 🤝
 
-## Deploy on Vercel
+We welcome contributions! Please see our contributing guidelines for more details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License 📄
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
+## Contact 📧
+
+For questions or support, please open an issue in the repository or contact us at hello@vizieros.co
+
+Happy coding! 🎉

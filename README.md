@@ -24,11 +24,11 @@ Welcome to the ZeroDev Fullstack Starterkit! This starter kit is designed to hel
 ## Next Steps ⚙️
 
 1.  Add Environment Variables to your .env
-2.  Run pnpm run db:generate
-3.  Run pnpm run db:migrate
-4.  Run pnpm run dev
+2.  `pnpm run db:generate`
+3.  `pnpm run db:migrate`
+4.  `pnpm run dev`
 5.  Open http://localhost:3000 in your browser
-6.  Run pnpm run stripe:listen in a separate terminal
+6.  `pnpm run stripe` listen in a separate terminal
 
 ## Building for Production 📦
 
